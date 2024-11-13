@@ -20,47 +20,37 @@ public class ProductoController {
 
     // Obtener todos los productos
     @GetMapping
-    public ResponseEntity<List<Producto>> obtenerTodosLosProductos() {
-        List<Producto> productos = productoService.findAll();
-        return new ResponseEntity<>(productos, HttpStatus.OK);
+    public ResponseEntity<List<Producto>>getAllProductos() {
+        return ResponseEntity.ok(productoService.findAll());
     }
 
     // Obtener un producto por ID
     @GetMapping("/{id}")
-    public ResponseEntity<Producto> obtenerProductoPorId(@PathVariable String id) {
-        Optional<Producto> producto = productoService.findById(id);
-        return producto.map(value -> new ResponseEntity<>(value, HttpStatus.OK))
-                .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
+    public ResponseEntity<Producto> getProductoById(@PathVariable String id) {
+        return productoService.findById(id)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     // Crear un nuevo producto
     @PostMapping
-    public ResponseEntity<Producto> crearProducto(@RequestBody Producto producto) {
+    public ResponseEntity<Producto> createProducto(@RequestBody Producto producto) {
         Producto nuevoProducto = productoService.save(producto);
-        return new ResponseEntity<>(nuevoProducto, HttpStatus.CREATED);
+        return ResponseEntity.status(HttpStatus.CREATED).body(nuevoProducto);
     }
 
     // Actualizar un producto existente
     @PutMapping("/{id}")
-    public ResponseEntity<Producto> actualizarProducto(@PathVariable String id, @RequestBody Producto producto) {
+    public ResponseEntity<Producto> updateProducto(@PathVariable String id, @RequestBody Producto producto) {
         producto.setId(id);
-        try {
-            Producto productoActualizado = productoService.update(producto);
-            return new ResponseEntity<>(productoActualizado, HttpStatus.OK);
-        } catch (IllegalArgumentException e) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
+        Producto productoActualizado = productoService.update(producto);
+        return productoActualizado != null ? ResponseEntity.ok(productoActualizado) : ResponseEntity.notFound().build();
     }
 
     // Eliminar un producto por ID
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> eliminarProducto(@PathVariable String id) {
-        if (productoService.findById(id).isPresent()) {
-            productoService.deleteById(id);
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        } else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
+    public ResponseEntity<Void> deleteProducto(@PathVariable String id) {
+        productoService.deleteById(id);
+        return ResponseEntity.noContent().build();
     }
-
 }
