@@ -3,7 +3,6 @@ package com.corhuila.Proyecto_final.Controller;
 
 
 import com.corhuila.Proyecto_final.Entity.Categoria;
-import com.corhuila.Proyecto_final.Entity.Producto;
 import com.corhuila.Proyecto_final.IService.ICategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
