@@ -16,8 +16,8 @@ const routes: Array<RouteRecordRaw> = [
   },
 
 {
-  path: '/producto',
-  name: 'Producto',
+  path: '/productos',
+  name: 'Productos',
   component: ProductPage
 },
 

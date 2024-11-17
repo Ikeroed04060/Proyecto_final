@@ -14,7 +14,7 @@
             title="Producto"
             description="Administrar productos registrados en el sistema."
             buttonText="Gestionar Productos"
-            pageLink="/producto"
+            pageLink="/productos"
           />
           <CardComponent
             title="Proveedor"
