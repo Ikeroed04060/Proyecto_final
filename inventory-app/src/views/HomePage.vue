@@ -23,10 +23,10 @@
             pageLink="/proveedores"
           />
           <CardComponent
-            title="Servicios por Cliente"
-            description="Administrar los servicios contratados por los clientes."
-            buttonText="Gestionar Servicio Cliente"
-            pageLink="/servicios-clientes"
+            title="Categoria"
+            description="Administrar las categorias."
+            buttonText="Gestionar categorias"
+            pageLink="/categoria"
           />
         </ion-row>
       </ion-grid>

@@ -130,7 +130,7 @@
           alert('Error al eliminar el Productos');
         }
       },
-      async editProductos(id) {
+      async editProducto(id) {
         try {
           console.log('ID del Productos a editar:', id);
           this.currentItem = await findProductoById(id);        
