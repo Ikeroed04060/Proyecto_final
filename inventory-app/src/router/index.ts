@@ -19,6 +19,7 @@ const routes: Array<RouteRecordRaw> = [
   name: 'Producto',
   component: ProductPage
 }
+
 ]
 
 const router = createRouter({
