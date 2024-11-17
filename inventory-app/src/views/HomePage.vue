@@ -17,10 +17,10 @@
             pageLink="/producto"
           />
           <CardComponent
-            title="Servicios"
-            description="Administrar servicios disponibles en el sistema."
-            buttonText="Gestionar Servicios"
-            pageLink="/servicios"
+            title="Proveedor"
+            description="Administrar proveedores disponibles en el sistema."
+            buttonText="Gestionar Proveedores"
+            pageLink="/proveedores"
           />
           <CardComponent
             title="Servicios por Cliente"
