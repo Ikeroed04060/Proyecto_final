@@ -15,18 +15,21 @@
             description="Administrar productos registrados en el sistema."
             buttonText="Gestionar Productos"
             pageLink="/productos"
+            imageSrc="./assets/images/producto.jpg"
           />
           <CardComponent
             title="Proveedor"
             description="Administrar proveedores disponibles en el sistema."
             buttonText="Gestionar Proveedores"
             pageLink="/proveedores"
+            imageSrc="./assets/images/prro.jpg"
           />
           <CardComponent
             title="Categoria"
             description="Administrar las categorias."
             buttonText="Gestionar categorias"
             pageLink="/categoria"
+            imageSrc="./assets/images/cate.jpg"
           />
           <CardComponent
             title="Ventas"
