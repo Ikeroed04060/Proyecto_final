@@ -4,7 +4,9 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,8 +17,7 @@ public class Ventas {
 
     @Id
     private String id;
-    private String productoId;
-    private int cantidadVendida;
+    private List<DetalleProducto> detalleProductos = new ArrayList<>();
     private double total;
     private Date fecha;
     private String clienteId; // Relación con la colección Clientes

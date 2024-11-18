@@ -17,7 +17,7 @@ public class Proveedores {
     @Id
     private String id;
     private String nombre;
-    private String contacto;
+    private String email;
     private String telefono;
     private String direccion;
 }

@@ -14,8 +14,8 @@
           <ion-input v-model="currentItem.nombre"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="floating">Contacto</ion-label>
-          <ion-input v-model="currentItem.contacto"></ion-input>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input v-model="currentItem.email"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Telefono</ion-label>
@@ -75,7 +75,7 @@
         currentItem: {
           id: null,
           nombre: '',
-          contacto : '',
+          email : '',
           telefono : '',
           direccion: ''
 
@@ -94,7 +94,7 @@
           this.processedProveedor = proveedoresData.map((item) => ({
             id: item.id,
             nombre: item.nombre,
-            contacto: item.contacto,          
+            email: item.email,          
             telefono: item.telefono,
             direccion: item.direccion,
           }));

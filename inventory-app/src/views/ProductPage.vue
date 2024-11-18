@@ -10,10 +10,6 @@
     >
       <template #form>
         <ion-item>
-          <ion-label position="floating">Id</ion-label>
-          <ion-input v-model="currentItem.id"></ion-input>
-        </ion-item>
-        <ion-item>
           <ion-label position="floating">Nombre</ion-label>
           <ion-input v-model="currentItem.nombre"></ion-input>
         </ion-item>

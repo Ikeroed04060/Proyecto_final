@@ -28,6 +28,12 @@
             buttonText="Gestionar categorias"
             pageLink="/categoria"
           />
+          <CardComponent
+            title="Ventas"
+            description="Administrar las Ventas."
+            buttonText="Gestionar ventas"
+            pageLink="/ventas"
+          />
         </ion-row>
       </ion-grid>
     </ion-content>
