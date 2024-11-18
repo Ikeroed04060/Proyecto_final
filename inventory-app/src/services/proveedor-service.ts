@@ -6,7 +6,7 @@ const PROVEEDOR_API_URL = `${API_BASE_URL}/proveedores`;
 interface ProveedorData{
     
     nombre : string;
-    contacto : string;
+    email : string;
     telefono : string;
     direccion : string
 }

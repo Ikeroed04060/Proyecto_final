@@ -31,6 +31,12 @@
             pageLink="/categoria"
             imageSrc="./assets/images/cate.jpg"
           />
+          <CardComponent
+            title="Ventas"
+            description="Administrar las Ventas."
+            buttonText="Gestionar ventas"
+            pageLink="/ventas"
+          />
         </ion-row>
       </ion-grid>
     </ion-content>
