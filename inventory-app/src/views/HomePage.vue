@@ -36,12 +36,14 @@
             description="Administrar las Ventas."
             buttonText="Gestionar ventas"
             pageLink="/ventas"
+            imageSrc="./assets/images/ventas.jpg"
           />
           <CardComponent
             title="Clientes"
             description="Administrar Clientes."
             buttonText="Gestionar clientes"
             pageLink="/clientes"
+            imageSrc="./assets/images/clientes.jpg"
           />
         </ion-row>
       </ion-grid>
