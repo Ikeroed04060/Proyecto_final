@@ -12,7 +12,7 @@
         </ion-card-header>
         <ion-card-content>
           <p>{{ description }}</p>
-          <ion-button expand="block" @click="navigateToPage">{{ buttonText }}</ion-button>
+          <ion-button expand="block" @click="navigateToPage" class="yellow-button">{{ buttonText }}</ion-button>
         </ion-card-content>
       </ion-card>
     </ion-col>
@@ -85,3 +85,24 @@
   border-radius: 8px; /* Bordes redondeados opcionales */
 }
   </style>  
+
+<style scoped>
+.text-center {
+  text-align: center;
+}
+
+.card-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Estilos personalizados para los botones amarillos */
+.yellow-button {
+  --background: yellow; /* Fondo amarillo */
+  --color: black; /* Texto negro */
+  font-weight: bold;
+}
+</style>
