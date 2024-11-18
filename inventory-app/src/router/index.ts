@@ -5,6 +5,7 @@ import ProductPage from '@/views/ProductPage.vue';
 import ProviderPage from '@/views/ProviderPage.vue';
 import CategoriaPage from '@/views/CategoriaPage.vue';
 import VentasPage from '@/views/VentasPage.vue';
+import ClientesPage from '@/views/ClientesPage.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -37,6 +38,11 @@ const routes: Array<RouteRecordRaw> = [
   path: '/ventas',
   name: 'ventas',
   component: VentasPage
+},
+{
+  path: '/clientes',
+  name: 'clientes',
+  component: ClientesPage
 },
 
 
