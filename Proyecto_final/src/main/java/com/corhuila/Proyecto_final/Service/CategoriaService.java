@@ -27,8 +27,15 @@ public class CategoriaService implements ICategoriaService {
 
     @Override
     public Categoria save(Categoria categoria) {
+        // Validar que el código de verificación no exista
+        Optional<Categoria> existente = categoriaRepository.findByCodigoVerificacion(categoria.getCodigoVerificacion());
+        if (existente.isPresent()) {
+            throw new IllegalArgumentException("El código de verificación ya está en uso: " + categoria.getCodigoVerificacion());
+        }
+
         return categoriaRepository.save(categoria);
     }
+
 
     @Override
     public Categoria update(Categoria categoria) {
