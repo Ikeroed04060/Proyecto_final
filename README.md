@@ -15,10 +15,9 @@ El objetivo principal de esta API es facilitar el control de inventarios, la ges
 ### Objetivos Específicos
 
 1. Desarrollar una API RESTful que permita gestionar productos, ventas y stock en tiempo real.
-2. Implementar autenticación segura utilizando JWT para garantizar que solo los usuarios autorizados puedan realizar operaciones sensibles.
-3. Crear un sistema de gestión de ventas que actualice automáticamente el stock de productos vendidos.
-4. Ofrecer un servicio sencillo para la administración de usuarios y su acceso a la API.
-5. Desarrollar una documentación clara y accesible para el consumo de la API mediante Swagger UI.
+2. Crear un sistema de gestión de ventas que actualice automáticamente el stock de productos vendidos.
+3. Ofrecer un servicio sencillo para la administración de usuarios y su acceso a la API.
+4. Desarrollar una documentación clara y accesible para el consumo de la API mediante Swagger UI.
 
 ## Alcance
 
