@@ -101,7 +101,7 @@ Los requerimientos funcionales describen las funciones que el sistema debe ser c
 
 ## Conclusión
 
-Este proyecto está diseñado para ser una solución robusta y escalable para la gestión de inventarios, ventas y usuarios, ofreciendo una API segura y fácil de usar. La implementación de JWT para autenticación, la optimización de consultas y el diseño escalable aseguran un rendimiento adecuado y una alta disponibilidad del sistema.
+Este proyecto está diseñado para ser una solución robusta y escalable para la gestión de inventarios, ventas y usuarios, ofreciendo una API segura y fácil de usar.La optimización de consultas y el diseño escalable aseguran un rendimiento adecuado y una alta disponibilidad del sistema.
 
 Este README proporciona una guía completa para la implementación y uso de la API. Si tienes alguna pregunta o necesitas más detalles, no dudes en consultarlo.
 
