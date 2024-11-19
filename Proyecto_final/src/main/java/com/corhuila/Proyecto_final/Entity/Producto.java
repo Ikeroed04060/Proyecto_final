@@ -5,7 +5,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 @AllArgsConstructor  //Anotción de lombok que agrega contructor con argumentos
 @NoArgsConstructor   //Anotación de lombok que agrega contructos sin argumentos o de sobrecarga
@@ -21,5 +23,9 @@ public class Producto {
     private int stock;
     private double precio;
     private String categoriaId; // Relación con la colección Categorías
+
+    @Field("codigo")
+    @Indexed(unique = true)
+    private String codigo;
 }
 

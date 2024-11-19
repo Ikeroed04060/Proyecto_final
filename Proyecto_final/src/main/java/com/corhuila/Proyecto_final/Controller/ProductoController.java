@@ -36,10 +36,17 @@ public class ProductoController {
 
     // Crear un nuevo producto
     @PostMapping
-    public ResponseEntity<Producto> createProducto(@RequestBody Producto producto) {
-        Producto nuevoProducto = productoService.save(producto);
-        return ResponseEntity.status(HttpStatus.CREATED).body(nuevoProducto);
+    public ResponseEntity<?> createProducto(@RequestBody Producto producto) {
+        try {
+            Producto nuevoProducto = productoService.save(producto);
+            return ResponseEntity.status(HttpStatus.CREATED).body(nuevoProducto);
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error: " + e.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error interno del servidor");
+        }
     }
+
 
     // Actualizar un producto existente
     @PutMapping("/{id}")
