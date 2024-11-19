@@ -39,5 +39,11 @@ public class ProveedoresService implements IProveedoresService {
     @Override
     public void deleteById(String id) {proveedoresRepository.deleteById(id);
     }
+
+    @Override
+    public Proveedores findByNit(String nit) {
+        return proveedoresRepository.findByNit(nit);
+    }
+
 }
 

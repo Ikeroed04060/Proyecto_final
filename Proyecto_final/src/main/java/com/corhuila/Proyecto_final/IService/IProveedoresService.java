@@ -11,4 +11,7 @@ public interface IProveedoresService {
     Proveedores save (Proveedores proveedores);            // Guardar o actualizar un proveedor
     Proveedores update(Proveedores proveedores);          // Actualizar un proveedor existente
     void deleteById(String id);                     // Eliminar un proveedor por ID
+
+    // Método para buscar por NIT
+    Proveedores findByNit(String nit);
 }

@@ -8,7 +8,9 @@ interface ProveedorData{
     nombre : string;
     email : string;
     telefono : string;
-    direccion : string
+    direccion : string;
+    nit: string
+    
 }
 
 

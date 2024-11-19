@@ -20,4 +20,5 @@ public class Proveedores {
     private String email;
     private String telefono;
     private String direccion;
+    private String nit;
 }
