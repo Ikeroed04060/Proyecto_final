@@ -17,6 +17,10 @@
           <ion-label position="floating">Descripción</ion-label>
           <ion-input v-model="currentItem.descripcion"></ion-input>
         </ion-item>
+        <ion-item>
+          <ion-label position="floating">Codigo de verificación</ion-label>
+          <ion-input v-model="currentItem.codigoVerificacion"></ion-input>
+        </ion-item>
       </template>
     </CrudComponent>
   </template>
@@ -67,7 +71,8 @@
         currentItem: {   
           id: null,
           nombre: '',
-          descripcion : ''
+          descripcion : '',
+          codigoVerificacion : ''
         },
         categorias: [],
         processedCategorias: []
@@ -83,7 +88,8 @@
           this.processedCategorias = categoriasData.map((item) => ({
             id: item.id,
             nombre: item.nombre,
-            descripcion: item.descripcion,          
+            descripcion: item.descripcion,
+            codigoVerificacion: item.codigoVerificacion,          
           }));
         } catch (error) {
           console.error('Error al cargar categorias:', error);

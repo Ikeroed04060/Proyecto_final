@@ -28,6 +28,9 @@ public class ProductoService implements IProductoService {
 
     @Override
     public Producto save(Producto producto) {
+        if (productoRepository.findByCodigo(producto.getCodigo()).isPresent()) {
+            throw new RuntimeException("El código del producto ya existe: " + producto.getCodigo());
+        }
         return productoRepository.save(producto);
     }
 

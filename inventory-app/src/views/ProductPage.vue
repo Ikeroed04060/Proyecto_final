@@ -14,6 +14,10 @@
           <ion-input v-model="currentItem.nombre"></ion-input>
         </ion-item>
         <ion-item>
+        <ion-label position="floating">Código</ion-label>
+          <ion-input v-model="currentItem.codigo"></ion-input>
+        </ion-item>
+        <ion-item>
           <ion-label position="floating">Descripción</ion-label>
           <ion-input v-model="currentItem.descripcion"></ion-input>
         </ion-item>
@@ -75,6 +79,7 @@
         currentItem: {
           id: null,
           nombre: '',
+          codigo:'',
           descripcion : '',
           stock : '',
           precio: ''
@@ -94,6 +99,7 @@
           this.processedProductos = productosData.map((item) => ({
             id: item.id,
             nombre: item.nombre,
+            codigo : item.codigo,
             descripcion: item.descripcion,          
             stock: item.stock,
             precio: item.precio,

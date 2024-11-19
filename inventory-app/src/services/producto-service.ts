@@ -10,7 +10,8 @@ interface ProductoData{
     stock : string;
     precio : string;
     categoriaId : string
-    
+    codigo : string;
+
 }
 
 export const getAllProductos = async (): Promise<any> => {
