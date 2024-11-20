@@ -61,9 +61,9 @@ Los requerimientos funcionales describen las funciones que el sistema debe ser c
 ---
 ## Pasos para desplegar la aplicación
 1. **Clonar repositorio de github**: Clonar el repositorio de GitHub en el que se encuentra alojado tanto el backend, frontend y apk de la aplicación.
-2. **Correr Servicios**: Por la ausencia de un archivo docker en primera instancia se necesitará disponer del motor de Base de datos de MongoDB y crear la base de datos de la aplicación usando el comando "use proyecto_final", seguidamente solo hará falta poner a correr el back y el front y ajustar un puerto 9090 publico para poner a funcionar la aplicación tanto en pc como en android.
-3. **Probar nuestra**: Ya con estos pasos deberia de poder correr nuestra aplicación, ten encuenta que está es una primera versión de esta app por lo que sus tiempos de respuesta pueden ser algo tardados y algunas funciones pueden no funcionar de la mejor manera, de todas formas igual ¡Muchas Gracias por probar nuetra App!
+2. **Correr Servicios**: Por la ausencia de un archivo docker en primera instancia se necesitará disponer del motor de Base de datos de MongoDB y crear la base de datos de la aplicación usando el comando **use proyecto_final**, seguidamente solo hará falta poner a correr el back y el front y ajustar un puerto 9090 publico para poner a funcionar la aplicación tanto en pc como en android.
+3. **Probar nuestra**: Ya con estos pasos deberia de poder correr nuestra aplicación, ten encuenta que está es una primera versión de esta app por lo que sus tiempos de respuesta pueden ser algo tardados y algunas funciones pueden no funcionar de la mejor manera, de todas formas igual ¡Muchas Gracias por probar nuestra App!
 ---
-# Conclusión
+Conclusión
 Este proyecto está diseñado para ser una solución robusta y escalable para la gestión de inventarios, ventas y usuarios, ofreciendo una API segura y fácil de usar.La optimización de consultas y el diseño escalable aseguran un rendimiento adecuado y una alta disponibilidad del sistema.
 --- 
