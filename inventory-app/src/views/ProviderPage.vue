@@ -25,6 +25,10 @@
           <ion-label position="floating">Dirección</ion-label>
           <ion-input v-model="currentItem.direccion"></ion-input>
         </ion-item>
+        <ion-item>
+           <ion-label position="floating">Nit</ion-label>
+           <ion-input v-model="currentItem.nit"></ion-input>
+        </ion-item>
       </template>
     </CrudComponent>
   </template>
@@ -77,7 +81,8 @@
           nombre: '',
           email : '',
           telefono : '',
-          direccion: ''
+          direccion: '',
+          nit: ''  //campo nuevo
 
         },
         proveedores: [],
@@ -97,6 +102,7 @@
             email: item.email,          
             telefono: item.telefono,
             direccion: item.direccion,
+            nit: item.nit //nuevo campo 
           }));
         } catch (error) {
           console.error('Error al cargar proveedores:', error);
@@ -137,7 +143,7 @@
         }
       },
       resetForm() {
-        this.currentItem = { id: null, nombre: '', contacto: '', telefono: '', direccion: '' };
+        this.currentItem = { id: null, nombre: '', contacto: '', telefono: '', direccion: '', nit: '' };
       }
     }
   };

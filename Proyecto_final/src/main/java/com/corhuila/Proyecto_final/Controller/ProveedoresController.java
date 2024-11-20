@@ -49,5 +49,12 @@ public class ProveedoresController {
         proveedoresService.deleteById(id);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/nit/{nit}")
+    public ResponseEntity<Proveedores> getProveedoresByNit(@PathVariable String nit){
+        Proveedores proveedores= proveedoresService.findByNit(nit);
+        return proveedores!= null ? ResponseEntity.ok(proveedores) : ResponseEntity.notFound().build();
+
+    }
 }
 
