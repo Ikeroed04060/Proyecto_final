@@ -21,7 +21,4 @@ public class Categoria {
     private String descripcion;
     private String codigoVerificacion;
 
-
-
-
 }
