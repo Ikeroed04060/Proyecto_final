@@ -59,7 +59,11 @@ Los requerimientos funcionales describen las funciones que el sistema debe ser c
 4. **Despliegue en Entorno de Producción**: Configurar el servidor, desplegar la API y conectar con la base de datos.
 5. **Documentación Final**: Asegurar que toda la documentación esté actualizada, especialmente la de la API mediante Swagger.
 ---
+## Pasos para desplegar la aplicación
+1. **Clonar repositorio de github**: Clonar el repositorio de GitHub en el que se encuentra alojado tanto el backend, frontend y apk de la aplicación.
+2. **Correr Servicios**: Por la ausencia de un archivo docker en primera instancia se necesitará disponer del motor de Base de datos de MongoDB y crear la base de datos de la aplicación usando el comando "use proyecto_final", seguidamente solo hará falta poner a correr el back y el front y ajustar un puerto 9090 publico para poner a funcionar la aplicación tanto en pc como en android.
+3. **Probar nuestra**: Ya con estos pasos deberia de poder correr nuestra aplicación, ten encuenta que está es una primera versión de esta app por lo que sus tiempos de respuesta pueden ser algo tardados y algunas funciones pueden no funcionar de la mejor manera, de todas formas igual ¡Muchas Gracias por probar nuetras App!
+---
 ## Conclusión
 Este proyecto está diseñado para ser una solución robusta y escalable para la gestión de inventarios, ventas y usuarios, ofreciendo una API segura y fácil de usar.La optimización de consultas y el diseño escalable aseguran un rendimiento adecuado y una alta disponibilidad del sistema.
-Este README proporciona una guía completa para la implementación y uso de la API. Si tienes alguna pregunta o necesitas más detalles, no dudes en consultarlo.
 --- 
